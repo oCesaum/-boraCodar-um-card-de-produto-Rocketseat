@@ -1,0 +1,95 @@
+:root {
+  --bg-color: #D9CDF7;
+  --main-color: #271A45;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.product-container {
+  max-width: 449px;
+  max-height: 253px;
+  position: relative;
+}
+
+.rotate-buttom {
+  position: absolute;
+  top: 0;
+  right: 35px;
+
+  border: none;
+  background: var(--bg-color);
+  cursor: pointer;
+}
+
+.rotate-buttom:focus {
+  outline: none;
+}
+
+.rotate-buttom:hover svg, .rotate-buttom:focus svg {
+  filter: brightness(.0);
+  transition: all .2s;
+}
+
+.product-info-container {
+  color: var(--main-color);
+}
+
+.product-code {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: .67;
+}
+
+.product-name {
+  margin: 12px 0;
+}
+
+.product-price {
+  margin-bottom: 20px;
+  opacity: .67;
+}
+
+.add-to-cart {
+  background-color: var(--bg-color);
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 0.5px solid var(--main-color);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover, .add-to-cart:focus {
+  outline: none;
+  filter: brightness(.90);
+  transition: all .3s;
+}
