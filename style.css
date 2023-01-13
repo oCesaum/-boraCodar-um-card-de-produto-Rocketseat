@@ -39,6 +39,11 @@ p {
   position: relative;
 }
 
+.product-img {
+  width: 449px;
+  height: 253px;
+}
+
 .rotate-buttom {
   position: absolute;
   top: 0;
